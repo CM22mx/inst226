@@ -73,6 +73,7 @@ view: flights {
       year
     ]
     sql: ${TABLE}.dep_time ;;
+    html: {{ rendered_value | date: "%d-%b-%Y %I:%M %p" }} ;;
   }
 
   dimension: destination {
